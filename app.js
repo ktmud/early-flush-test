@@ -18,6 +18,7 @@ var EARLY_HEAD = [
 	'  <p><code>?chunk={number}</code>        - how many chunks to output',
 	'  <p><code>?chunktime={seconds}</code>  - delay between chunks',
 	'</blockquote>',
+	'<p>Most useful test: use <a href="?wait=2">?wait=2</a> vs <a href="?delay=2">?delay=2</a> to see the difference.',
 	'<hr>',
 	''
 ].join('\n');
@@ -35,7 +36,7 @@ app.use(require('koa-compress')({
 app.use(function *() {
 	var query = this.query
 	var wait = Number(query.wait) || .2
-	var delay = Number(query.delay) || 1
+	var delay = Number(query.delay) || .2
 	var chunk = Number(query.chunk) || 3
 	var chunkTime = Number(query.chunktime) || 1
 
