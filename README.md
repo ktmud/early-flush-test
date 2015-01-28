@@ -1,4 +1,5 @@
-[IE CSS limit](https://iecss.herokuapp.com/)
+[Early Flush Test](https://earlyflush.herokuapp.com/)
 ============
 
-Ref: http://stackoverflow.com/questions/9906794/internet-explorers-css-rules-limits
+To test if early flush of header is working on your network environment.
+
